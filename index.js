@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
-mongoose.connect(process.env.MONGO_URL).then(() => {
+mongoose.connect('mongodb+srv://shamimakhtarsheikh:*meghalaya1@cluster0.uetjdil.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(() => {
     console.log('Connected to MongoDB');
 });
 
