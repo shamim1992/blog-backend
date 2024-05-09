@@ -24,9 +24,9 @@ app.use((err, req, res, next) => {
         success: false, statusCode, message
     });
 });
-app.use('/', (req, res) => {
-    res.send("server is running")
-})
+// app.use('/', (req, res) => {
+//     res.send("server is running")
+// })
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/post', postRoutes);
